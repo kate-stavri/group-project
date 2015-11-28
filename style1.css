@@ -1,0 +1,50 @@
+
+#social-buttons button {
+  color: white;
+}
+button.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+}
+button.btn-facebook{
+  background-color:#4868ac;
+  border-color: #314776;
+}
+button.btn-pinterest{
+  background-color: #b62f26;
+  border-color:#b62f26;
+}
+.jumbotron {
+  min-height: 500px;
+  background-image: url('Cosmetics_2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#mission{
+  background-color: rgba(32,35,41,0.9);
+  color:#ddd;
+  text-align: center;
+}
+body{
+  padding-top: 70px;
+}
+div.jumbotron h2{
+  color: white;
+  background-color: rgba(245,165,80,0.9);
+  margin-bottom: 1em;
+}
+h2{
+  padding-top:10px;
+  font-size:70px;
+  font-family: Georgia; 
+}
+div.col-sm-8{
+  padding-top: 40px;
+}
+nav.navbar-fixed-top{
+  height: 71px;
+  background-color: rgba(221,221,221,0.98)
+}
+ul.nav{
+  padding-top: 10px;
+}

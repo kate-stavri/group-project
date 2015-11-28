@@ -1,98 +1,231 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link href='dist/css/bootstrap.css' rel='stylesheet'>
-  <title>Chem</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-</head>
+  <head>
+   <link href='dist/css/bootstrap.css' rel='stylesheet'>
+   <title>Chem</title>
+   <link href="/mystyle.css" type="text/css" rel='mystyle.css'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  </head>
 
-<style>
-  #social-buttons button {
-    color: white;
-  }
-  button.btn-twitter {
-    background-color: #00acee;
+  <style>
+    div.jumbotron {
+      min-height: 400px;
+      background-image:url("Cosmetics_2.jpg");
+      background-size: cover;
+      background-attachment:fixed;
+    }
+    body{
+      padding-top: 70px;
+    }
+    div.jumbotron h2{
+      color: white;
+      background-color: rgba(245,165,80,0.9);
+      border-radius: 25px;
+      margin-bottom: 1em;
+      padding-top:15px;
+      padding-left: 20px;
+      font-size:65px;
+      font-family: Georgia;
+    }
+    nav.navbar-fixed-top{
+      height: 71px;
+      background-color: rgba(221,221,221,0.98)
+    }
+    ul.nav{
+      padding-top: 10px;
+    }
+    ul.content-list{
+      background-color: rgba(245,165,80,0.3);
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 23px;
+      color: #222;
+
+    }
+    li{
+      position: relative;
+      padding: 10 0 10 0px;
+    }
+    form{
+      padding-left: 10px;
+    }
+    button.btn-twitter {
+     background-color: #00acee;
     border-color: #009ad5;
-  }
-  button.btn-facebook{
-    background-color:#4868ac;
-    border-color: #314776;
-  }
-  button.btn-pinterest{
-    background-color: #b62f26;
-    border-color:#b62f26;
-  }
-  div.jumbotron {
-    min-height: 500px;
-    background-image: url('Cosmetics_2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  #mission{
-    background-color: rgba(32,35,41,0.9);
-    color:#ddd;
-    text-align: center;
-  }
-  body{
-    padding-top: 70px;
-  }
-  .jumbotron h2{
-    color: white;
-    background-color: rgba(245,165,80,0.9);
-    margin-bottom: 1em;
-  }
-  h2{
-    padding-top:10px;
-    font-size:70px;
-    font-family: Georgia; 
-  }
-  div.col-sm-8{
-    padding-top: 40px;
-  }
-  nav.navbar-fixed-top{
-    height: 71px;
-    background-color: rgba(221,221,221,0.98)
-  }
-  ul.nav{
-    padding-top: 10px;
-  }
-</style> 
-<div class='jumbotron'> 
+    }
+    button.btn-facebook{
+      background-color:#4868ac;
+      border-color: #314776;
+    }
+    button.btn-pinterest{
+      background-color: #b62f26;
+      border-color:#b62f26;
+    }
+    div.panel{
+      font-size: 20px;
+    }
+    div.panel-body{
+      padding-bottom: 40px;
+    }
+    div.panel-footer{
+      padding-bottom: 30px;
+      padding-top:25px;
+    }
+    form{
+      padding-top: 40px;
+    }
+    ul.social{
+      padding-top: 30px;
+    }
+    ul.content-list{
+      line-height: 40px;
+    }
+    div.buzz h2{
+    }
+    div.main div.row{
+      border-left:solid;
+      border-top:solid;
+    }
+  </style>
+  
+  <div class='jumbotron'> 
 
-  <div class='container'>
-    <body>
+    <div class='container'>
+      <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
 
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Two-chemists</a>
+        <div class='row'>
+          <div class='col-sm-8'>
+            <h2>Chemistry behind cosmetic products</h2>
           </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          </div><!--/.nav-collapse -->
         </div>
-      </nav>
+      </body>
+    </div>
+  </div>
 
+  <div id="buzz">
+    <div class='container'>
+      <h2>The basics</h2>
+      
       <div class='row'>
+
         <div class='col-sm-8'>
-          <h2>Chemistry behind cosmetic products</h2>
+          <ul class="content-list">
+            <li>Cosmetics are products designed to cleanse, protect and change the appearance of our bodies.</li>
+            <li>The key ingredients present in most cosmetics are water, emulsifiers, preservatives, thickeners, moisturisers, colours and fragrances.</li>
+            <li>Ingredients can be naturally occurring or artificial, but the impact upon health depends on the ingredients used.</li>
+            <li>The doses of potentially dangerous chemicals found in cosmetics are considered too small to pose a risk to human health.</li>
+          </ul>
+           <p>  
+
+          <h2>Five common cosmetics and their main ingredients</h2>
+          <div class='main'>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./shampoo.png' alt='shampoo'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./Sodium.png'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">Panel with panel-warning class</div>
+              <div class="panel-body">Panel Content</div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./moisturiser.png' alt='moisturiser'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./glycerin.png'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">Panel with panel-warning class</div>
+              <div class="panel-body">Panel Content</div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./lipstick.png' alt='lipstick'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./carminic-acid.jpg'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">Panel with panel-warning class</div>
+              <div class="panel-body">Panel Content</div>
+            </div>
+           <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./perfume.png' alt='perfume'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./jasmone.png'>
+              </div>
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">Panel with panel-warning class</div>
+              <div class="panel-body">Panel Content</div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./mascara.png' alt='mascara'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./carbon-b.png'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">Panel with panel-warning class</div>
+              <div class="panel-body">Panel Content</div>
+            </div>
+          </div>
         </div>
         <div class='col-sm-4'>
+          <div class="panel panel-default">
+            <div class="panel-body">
+             Send us a question!
+              <form role='form'>
+                <label for="email"></label>
+                <input type="text" name="email" >
+                <button class='btn'>Send</button>
+              </form> 
+            </div>
+            <div class="panel-footer">Follow us on social media! 
+              <ul class="social">
+                <button class="btn btn-twitter"><span class="hidden-element">Twitter</span></button>
+                <button class="btn btn-facebook"><span class="hidden-element">Facebook</span></button>
+                <button class="btn btn-pinterest"><span class="hidden-element">Pinterest</span></button>
+              </ul>
+            </div>
+          </div>
         </div>
+        
       </div>
-    </body>
+    </div>
   </div>
-</div>
+      
+    
+ 
 </html>
+  
   
