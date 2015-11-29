@@ -3,11 +3,118 @@
 
   <head>
    <link href='dist/css/bootstrap.css' rel='stylesheet'>
-   <title>Chem</title>
+   <title>Chemistry of Cosmetics</title>
+   <link href="/mystyle.css" type="text/css" rel='mystyle.css'>
    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-   <link href="./mystyle.css" type="text/css" rel='stylesheet'>
   </head>
 
+  <style>
+    div.jumbotron {
+      min-height: 450px;
+      background-image:url("Cosmetics_2.jpg");
+      background-size: cover;
+      background-attachment:fixed;
+    }
+    body{
+      padding-top: 70px;
+    }
+    div.jumbotron h1{
+      color: white;
+      background-color: rgba(245,165,80,0.9);
+      margin-bottom: 4em;
+      padding-top:30px;
+      padding-left: 70px;
+      font-size:65px;
+      font-family: Georgia;
+    }
+    nav.navbar-fixed-top{
+      height: 71px;
+      background-color: rgba(221,221,221,0.98);
+      text-align: right;
+    }
+    ul.nav{
+      padding-top: 10px;
+    }
+    ul.content-list{
+      background-color: rgba(245,165,80,0.3);
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 23px;
+      color: #222;
+
+    }
+    li{
+      position: relative;
+      padding: 10 0 10 0px;
+    }
+    form{
+      padding-left: 10px;
+    }
+    button.btn-twitter {
+     background-color: #00acee;
+    border-color: #009ad5;
+    }
+    button.btn-facebook{
+      background-color:#4868ac;
+      border-color: #314776;
+    }
+    button.btn-pinterest{
+      background-color: #b62f26;
+      border-color:#b62f26;
+    }
+    div.panel{
+      font-size: 20px;
+    }
+    div.panel-body{
+      padding-bottom: 40px;
+    }
+    div.panel-footer{
+      padding-bottom: 30px;
+      padding-top:25px;
+    }
+    form{
+      padding-top: 40px;
+    }
+    ul.social{
+      padding-top: 30px;
+    }
+    ul.content-list{
+      line-height: 40px;
+    }
+    h2{
+      margin-bottom: 1.2em;
+      padding-top:15px;
+      padding-left: 20px;
+      font-size:35px;
+      color: #222
+    }
+    div.main div.row{
+      border:dotted;
+      border-radius:25px;
+      border-color: green;
+      margin-bottom: 1.2em;
+    }
+    div.skin{
+      text-align:center;
+    }
+    div.panel-body{
+      line-height: 30px;
+      font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 21px;
+    }
+    #footer{
+    background-color: rgba(32,35,41,0.9);
+    color:#ddd;
+  }
+  h3{
+    text-align: left;
+  }
+  form.navbar-form{
+    padding-top: 10px;
+  }
+  div.panel-primary{
+    margin-top: 870px;
+  }
+  </style>
   <div class='jumbotron'> 
 
     <div class='container'>
@@ -32,7 +139,9 @@
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="button" class="btn btn-info">
+                  <span class="glyphicon glyphicon-search"></span> Search
+                </button>
               </form>
             </div>
             </div><!--/.nav-collapse -->
@@ -67,10 +176,10 @@
           <div class='main'>
             <div class='row'>
               <div class='col-sm-2'>
-                <img src='./images/shampoo.png' alt='shampoo'>
+                <img src='./shampoo.png' alt='shampoo'>
               </div>
               <div class='col-sm-2'>
-                <img src='./images/Sodium.png'>
+                <img src='./Sodium.png'>
               </div><br />
             </div>
             <div class="panel panel-warning">
@@ -81,26 +190,26 @@
             </div>
             <div class='row'>
               <div class='col-sm-2'>
-                <img src='./images/moisturiser.png' alt='moisturiser'>
+                <img src='./moisturiser.png' alt='moisturiser'>
               </div>
               <div class='col-sm-2'>
-                <img src='./images/glycerin.png'>
+                <img src='./glycerin.png'>
               </div><br />
             </div>
             <div class="panel panel-warning">
               <div class="panel-heading">How does my cream keep my hands hydrated?</div>
               <div class="panel-body">The main components of a moisturiser are: emollients, humectants and occlusive agents. Humectants (glycerol and urea) are the most important, as they can attract water from atmosphere and keep it bound to the corneum stratum. Emollients can help maintain a soft aspect of the skin, by smoothening the epidermic skin cells. Also, in order to prevent water loss from the tissue, occlusive agents like waxes and oils (which are insoluble in water) are added. <br />
                 <div class='skin'>
-                  <img src='./images/cream.jpg'>
+                  <img src='./cream.jpg'>
                 </div>
               </div>
             </div>
             <div class='row'>
               <div class='col-sm-2'>
-                <img src='./images/lipstick.png' alt='lipstick'>
+                <img src='./lipstick.png' alt='lipstick'>
               </div>
               <div class='col-sm-2'>
-                <img src='./images/carminic-acid.jpg'>
+                <img src='./carminic-acid.jpg'>
               </div><br />
             </div>
             <div class="panel panel-warning">
@@ -109,10 +218,10 @@
             </div>
            <div class='row'>
               <div class='col-sm-2'>
-                <img src='./images/perfume.png' alt='perfume'>
+                <img src='./perfume.png' alt='perfume'>
               </div>
               <div class='col-sm-2'>
-                <img src='./images/jasmone.png'>
+                <img src='./jasmone.png'>
               </div>
             </div>
             <div class="panel panel-warning">
@@ -121,10 +230,10 @@
             </div>
             <div class='row'>
               <div class='col-sm-2'>
-                <img src='./images/mascara.png' alt='mascara'>
+                <img src='./mascara.png' alt='mascara'>
               </div>
               <div class='col-sm-2'>
-                <img src='./images/carbon-b.png'>
+                <img src='./carbon-b.png'>
               </div><br />
             </div>
             <div class="panel panel-warning">
@@ -136,13 +245,44 @@
         <div class='col-sm-4'>
           <div class="panel panel-default fixed">
             <div class="panel-body">
-             Send us a question!
+              Send us a question! 
               <form role='form'>
-                <label for="email"></label>
-                <input type="text" name="email" >
-                <button class='btn'>Send</button>
+                
+                <label for="question"></label>
+                
+                <input type="question" class="form-control" id="pwd" placeholder="Type your question">
+
+                      <div class="form-group">        
+                        <button class='btn'>Send</button>
+                      </div>
               </form> 
             </div>
+
+                    <div class="panel-body">
+                      Subscribe for more:
+                    <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="pwd">Name:</label>
+
+                        <div class="col-sm-8">          
+                          <input type="name" class="form-control" id="pwd" placeholder="Enter full name">
+                        </div>
+                      </div>
+                       <div class="form-group">
+                          <label class="control-label col-sm-3" for="email">Email:</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="Enter e-mail">
+                          </div>
+                        </div>
+                        
+                      <div class="form-group">        
+                        <button class='btn'>Submit</button>
+                       
+                      </div>
+                    </form>
+                  </div>
+
+            
             <div class="panel-footer">Follow us on social media! 
               <ul class="social">
                 <button class="btn btn-twitter"><span class="hidden-element">Twitter</span></button>
@@ -249,13 +389,17 @@
             </div>
         </div>
       </div>
+
     </div>
   </div>
   <div id="footer">
     <div class='container'>
-      <h3><small>Two_chemists</small></h3> 
-      </div>
+      <h3><small> brought to you by two_chemists </small></h3> 
     </div>
+    <div>
+      <h5><small> No copyright intended </small></h5>
+    </div>
+    
   </div>  
 </html>
   
