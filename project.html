@@ -1,98 +1,369 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link href='dist/css/bootstrap.css' rel='stylesheet'>
-  <title>Chem</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-</head>
+  <head>
+   <link href='dist/css/bootstrap.css' rel='stylesheet'>
+   <title>Chem</title>
+   <link href="/mystyle.css" type="text/css" rel='mystyle.css'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  </head>
 
-<style>
-  #social-buttons button {
-    color: white;
-  }
-  button.btn-twitter {
-    background-color: #00acee;
+  <style>
+    div.jumbotron {
+      min-height: 450px;
+      background-image:url("Cosmetics_2.jpg");
+      background-size: cover;
+      background-attachment:fixed;
+    }
+    body{
+      padding-top: 70px;
+    }
+    div.jumbotron h1{
+      color: white;
+      background-color: rgba(245,165,80,0.9);
+      margin-bottom: 4em;
+      padding-top:30px;
+      padding-left: 70px;
+      font-size:65px;
+      font-family: Georgia;
+    }
+    nav.navbar-fixed-top{
+      height: 71px;
+      background-color: rgba(221,221,221,0.98);
+      text-align: right;
+    }
+    ul.nav{
+      padding-top: 10px;
+    }
+    ul.content-list{
+      background-color: rgba(245,165,80,0.3);
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 23px;
+      color: #222;
+
+    }
+    li{
+      position: relative;
+      padding: 10 0 10 0px;
+    }
+    form{
+      padding-left: 10px;
+    }
+    button.btn-twitter {
+     background-color: #00acee;
     border-color: #009ad5;
-  }
-  button.btn-facebook{
-    background-color:#4868ac;
-    border-color: #314776;
-  }
-  button.btn-pinterest{
-    background-color: #b62f26;
-    border-color:#b62f26;
-  }
-  div.jumbotron {
-    min-height: 500px;
-    background-image: url('Cosmetics_2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  #mission{
+    }
+    button.btn-facebook{
+      background-color:#4868ac;
+      border-color: #314776;
+    }
+    button.btn-pinterest{
+      background-color: #b62f26;
+      border-color:#b62f26;
+    }
+    div.panel{
+      font-size: 20px;
+    }
+    div.panel-body{
+      padding-bottom: 40px;
+    }
+    div.panel-footer{
+      padding-bottom: 30px;
+      padding-top:25px;
+    }
+    form{
+      padding-top: 40px;
+    }
+    ul.social{
+      padding-top: 30px;
+    }
+    ul.content-list{
+      line-height: 40px;
+    }
+    h2{
+      margin-bottom: 1.2em;
+      padding-top:15px;
+      padding-left: 20px;
+      font-size:35px;
+      color: #222
+    }
+    div.main div.row{
+      border:dotted;
+      border-radius:25px;
+      border-color: green;
+      margin-bottom: 1.2em;
+    }
+    div.skin{
+      text-align:center;
+    }
+    div.panel-body{
+      line-height: 30px;
+      font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 21px;
+    }
+    #footer{
     background-color: rgba(32,35,41,0.9);
     color:#ddd;
-    text-align: center;
   }
-  body{
-    padding-top: 70px;
+  h3{
+    text-align: left;
   }
-  .jumbotron h2{
-    color: white;
-    background-color: rgba(245,165,80,0.9);
-    margin-bottom: 1em;
-  }
-  h2{
-    padding-top:10px;
-    font-size:70px;
-    font-family: Georgia; 
-  }
-  div.col-sm-8{
-    padding-top: 40px;
-  }
-  nav.navbar-fixed-top{
-    height: 71px;
-    background-color: rgba(221,221,221,0.98)
-  }
-  ul.nav{
+  form.navbar-form{
     padding-top: 10px;
   }
-</style> 
-<div class='jumbotron'> 
+  div.panel-primary{
+    margin-top: 870px;
+  }
+  </style>
+  <div class='jumbotron'> 
 
-  <div class='container'>
-    <body>
+    <div class='container'>
+      <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#logo">Two_chemists</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
 
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Two-chemists</a>
+        <div class='row'>
+          <div class='col-sm-8'>
+            <h1>The chemistry of cosmetics</h1>
           </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          </div><!--/.nav-collapse -->
         </div>
-      </nav>
+      </body>
+    </div>
+  </div>
 
+  <div id="buzz">
+    <div class='container'>
+      <h2>The basics</h2>
+      
       <div class='row'>
+
         <div class='col-sm-8'>
-          <h2>Chemistry behind cosmetic products</h2>
+          <ul class="content-list">
+            <li>Cosmetics are products designed to cleanse, protect and change the appearance of our bodies.</li>
+            <li>The key ingredients present in most cosmetics are water, emulsifiers, preservatives, thickeners, moisturisers, colours and fragrances.</li>
+            <li>Ingredients can be naturally occurring or artificial, but the impact upon health depends on the ingredients used.</li>
+            <li>The doses of potentially dangerous chemicals found in cosmetics are considered too small to pose a risk to human health.</li>
+          </ul>
+           <p>  
+
+          <h2>Analysing 5 common cosmetics</h2>
+          <div class='main'>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./shampoo.png' alt='shampoo'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./Sodium.png'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">How does my shampoo work?</div>
+              <div class="panel-body"> Shampoos work on the same principle as detergents. By containing a substance called surfactant (which can be either SLS- sodium laureath sulfate or ammonium laureath sulfate) they help reduce the surface tension of water, making it more able to bind to oily molecules.<br /> 
+                The surfactant molecule has a hydrophilic end, which dissolves in water and a hydrophobic one which interacts with greasy substances, like the sebum coating the hair. As a result, the oily molecules are forced to dissolve into water and rinsing leaves your hair clean! <br />
+                Also, if the natural coating of the hair is removed, this would have undesirable effects on the aspect, so silicones are also added in order to keep your hair nice and shiny. <br /><blockquote>Sounds like time for a chemistry experiment! If you want to try making your own shampoo at home from natural compounds, <a href="http://www.beautyandtips.com/hairtips/11-homemade-shampoo-recipes-using-only-natural-ingredients/"> click here</a>!</blockquote></div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./moisturiser.png' alt='moisturiser'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./glycerin.png'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">How does my cream keep my hands hydrated?</div>
+              <div class="panel-body">The main components of a moisturiser are: emollients, humectants and occlusive agents. Humectants (glycerol and urea) are the most important, as they can attract water from atmosphere and keep it bound to the corneum stratum. Emollients can help maintain a soft aspect of the skin, by smoothening the epidermic skin cells. Also, in order to prevent water loss from the tissue, occlusive agents like waxes and oils (which are insoluble in water) are added. <br />
+                <div class='skin'>
+                  <img src='./cream.jpg'>
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./lipstick.png' alt='lipstick'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./carminic-acid.jpg'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">"Give a woman the right lipstick and she may conquer the world"</div>
+              <div class="panel-body">Lipsticks were first used by Cleopatra back in 60BC and consisted of a mixture of crushed carmine beetles, which gave a deep red pigment.<br />Carminic acid, the compound responsible for this is still used nowadays, together with fatty acids (like the ones in castor oil) which give 'stickness' and Titanium Oxide, which gives brightness.<br /> The reason why some lipsticks look so intense is not because of the pigment, but is due to the fact that this pigment reacts with the amino group of the proteins found on the surface of your skin. </div>
+            </div>
+           <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./perfume.png' alt='perfume'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./jasmone.png'>
+              </div>
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">Perfume sets the mood for... glamour!</div>
+              <div class="panel-body">The compounds used to make perfume are called essential oils and are generally obtained for the leaves or the flowers of various plants. All perfumes have a base which fix and enhance the total effect of the fragrances and essential oils added and a solvent (an alcohol) which ensures the homogenous phase of the final product. <br /> The base used will usually reflect in the the price of the perfume: grey amber is the most expensive type of base, being a natural product extracted from whales. Another widely used base is hedione, which can be synthesised form cis-jasmone, the jasmine oil constituent. </div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-2'>
+                <img src='./mascara.png' alt='mascara'>
+              </div>
+              <div class='col-sm-2'>
+                <img src='./carbon-b.png'>
+              </div><br />
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading">Making your eyelashes as long as possible! </div>
+              <div class="panel-body"><iframe width="720" height="400" src="https://www.youtube.com/embed/DNOr2kQAI_c" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+          </div>
         </div>
         <div class='col-sm-4'>
+          <div class="panel panel-default fixed">
+            <div class="panel-body">
+             Send us a question!
+              <form role='form'>
+                <label for="email"></label>
+                <input type="text" name="email" >
+                <button class='btn'>Send</button>
+              </form> 
+            </div>
+            <div class="panel-footer">Follow us on social media! 
+              <ul class="social">
+                <button class="btn btn-twitter"><span class="hidden-element">Twitter</span></button>
+                <button class="btn btn-facebook"><span class="hidden-element">Facebook</span></button>
+                <button class="btn btn-pinterest"><span class="hidden-element">Pinterest</span></button>
+              </ul>
+            </div>
+            <div class='quiz'>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-arrow-right"></span>Poll! How often do you use hand cream?</span>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    Every day
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    Once a week
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    Only when my hands are dry
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    Never
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-primary btn-sm">
+                        Vote</button>
+                    <a href="#">View Result</a></div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-arrow-right"></span>Quiz! How many chemicals do you think a woman applies every day through cosmetic use?</span>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    20
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    100
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    300
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios">
+                                    500
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-primary btn-sm">
+                        Vote</button>
+                    <a href="#">View Answer</a></div>
+            </div>
         </div>
       </div>
-    </body>
+    </div>
   </div>
-</div>
+  <div id="footer">
+    <div class='container'>
+      <h3><small>Two_chemists</small></h3> 
+      </div>
+    </div>
+  </div>  
 </html>
+  
   
