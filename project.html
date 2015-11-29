@@ -10,7 +10,7 @@
 
   <style>
     div.jumbotron {
-      min-height: 400px;
+      min-height: 450px;
       background-image:url("Cosmetics_2.jpg");
       background-size: cover;
       background-attachment:fixed;
@@ -18,7 +18,7 @@
     body{
       padding-top: 70px;
     }
-    div.jumbotron h2{
+    div.jumbotron h1{
       color: white;
       background-color: rgba(245,165,80,0.9);
       border-radius: 25px;
@@ -80,14 +80,26 @@
     ul.content-list{
       line-height: 40px;
     }
-    div.buzz h2{
+    h2{
+      margin-bottom: 1.2em;
+      padding-top:15px;
+      padding-left: 20px;
+      font-size:35px;
+      color: #222
     }
     div.main div.row{
-      border-left:solid;
-      border-top:solid;
+      border:dotted;
+      border-radius:25px;
+      border-color: green;
+      margin-bottom: 1.2em;
     }
     div.skin{
       text-align:center;
+    }
+    div.panel-body{
+      line-height: 30px;
+      font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 21px;
     }
   </style>
   
@@ -117,7 +129,7 @@
 
         <div class='row'>
           <div class='col-sm-8'>
-            <h2>Chemistry behind cosmetic products</h2>
+            <h1>Chemistry behind cosmetic products</h1>
           </div>
         </div>
       </body>
@@ -139,7 +151,7 @@
           </ul>
            <p>  
 
-          <h2>Five common cosmetics and their main ingredients</h2>
+          <h2>Analysing 5 common cosmetics</h2>
           <div class='main'>
             <div class='row'>
               <div class='col-sm-2'>
@@ -210,7 +222,7 @@
           </div>
         </div>
         <div class='col-sm-4'>
-          <div class="panel panel-default">
+          <div class="panel panel-default fixed">
             <div class="panel-body">
              Send us a question!
               <form role='form'>
@@ -225,6 +237,10 @@
                 <button class="btn btn-facebook"><span class="hidden-element">Facebook</span></button>
                 <button class="btn btn-pinterest"><span class="hidden-element">Pinterest</span></button>
               </ul>
+            </div>
+            <div class='poll'>
+            </div>
+            <div class='quiz'>
             </div>
           </div>
         </div>
